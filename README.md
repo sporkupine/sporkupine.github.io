@@ -1,5 +1,5 @@
 # portfolio
-Beginning work on a new portfolio site
+FInishing work on a new portfolio site
 ---
 ## To Do:
 - update links on Projects page
