@@ -3,11 +3,12 @@ FInishing work on a new portfolio site
 ---
 ## To Do:
 - update links on Projects page
+  - everything but PCC is good to go, PCC is not hosted yet.
 - update images to screenshots of the projects
   - probably freshen up the older projects a bit first
-  - also get everything hosted and running, link to hosted site with an additional link to the GitHub repos
+  - Recipe App needs a css makeover
+  - get PCC hosted, everything else is ready
 - link Contact form to actually contact me
+  - use [emailJS](https://www.emailjs.com/) to send directly to Gmail without a mailto
   - maybe enable a reCaptcha to prevent spam
-- get a second opinion on About Me page
-  - too much text?
 - add picture of me to About Me page, replace current blank image
