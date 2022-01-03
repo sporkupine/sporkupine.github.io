@@ -20,6 +20,27 @@
         emailjs.init("user_rLx7gmDNrZbnTijCDeyLc");
       })();
     </script>
+    <!-- call emailJS on submit -->
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("service_2h5mwcy", "contact_form", this).then(
+              function () {
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
   </head>
   <body>
     <!-- wrapper -->
@@ -51,15 +72,16 @@
       <section id="contact">
         <div class="inner">
           <section>
-            <form method="post" action="#">
+            <form method="post" id="contact-form" action="#">
+              <input type="hidden" name="contact_number" />
               <div class="fields">
                 <div class="field half">
                   <label for="name">Name</label>
-                  <input type="text" name="name" id="name" />
+                  <input type="text" name="user_name" id="name" />
                 </div>
                 <div class="field half">
                   <label for="email">Email</label>
-                  <input type="text" name="email" id="email" />
+                  <input type="text" name="user_email" id="email" />
                 </div>
                 <div class="field">
                   <label for="message">Message</label>
