@@ -9,6 +9,5 @@ FInishing work on a new portfolio site
   - Recipe App needs a css makeover
   - get PCC hosted, everything else is ready
 - link Contact form to actually contact me
-  - use [emailJS](https://www.emailjs.com/) to send directly to Gmail without a mailto
   - maybe enable a reCaptcha to prevent spam
 - add picture of me to About Me page, replace current blank image
